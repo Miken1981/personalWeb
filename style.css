@@ -1,21 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rock+Salt&display=swap');
 
 header {
-  color: #f6f578;
   background: #024249;
 }
 
-h1 {
+body {
+  background: #024249;
+  color: #f6f577;
+}
+
+h2 {
+  color: #f08a5d;
+}
+
+h3 {
+color: #b83b5e;
+}
+.logo {
   text-align: center;
   font-family: 'Rock Salt', cursive;
   font-size: 45px;
   padding-top: 25px;
+  color: #f6f578;
+  margin: 0;
 }
 .group{
   display: flex;
   flex-direction: row;
 
 }
+/* added psuedoclass */
+a:link{
+  color: #00adb5;
+}
+a:visited{
+  color: #32e0c4;
+}
+
+a:hover{
+    color: #79d70f;
+}
+
+a:active{
+  color: #17706e;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  list-style: none;
+  align-content: space-between;
+  align-items: flex-end;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px 0 0;
+}
+
+header nav ul li a:link {
+  color: #f6f578;
+}
+
+header nav ul li a:visited{
+  color: #32e0c4;
+}
+
+header nav ul li a:hover{
+    color: #79d70f;
+}
+
+header nav ul li a:active{
+  color: #17706e;
+}
+
 
 img {
   height: 200px;
@@ -29,21 +93,7 @@ h2{
 a {
   margin-right: 45px;
 }
-/* added psuedoclass */
-a:link{
-  color: #ff1e56;
-}
-a:visited{
-  color: #32e0c4;
-}
 
-a:hover{
-    color: #79d70f;
-}
-
-a:active{
-  color: #
-}
 
 ul {
   list-style-type: circle;
@@ -66,8 +116,25 @@ ul {
   width: 250px;
 }
 
+@media all and (min-width: 600px) {
 
-@media (max-width: 1000px){
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+@media (max-width: 800px){
   .group{
   flex-direction: column;
   }
