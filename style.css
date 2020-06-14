@@ -1,141 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display+SC&family=Sriracha&display=swap');
 
-header {
-  background: #024249;
-}
 
 body {
-  background: #024249;
+  margin: 0;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #024249;
   color: #f6f577;
 }
 
-h2 {
-  color: #f08a5d;
-}
-
-h3 {
-color: #b83b5e;
-}
 .logo {
+  font-family: 'Sriracha', cursive;
   text-align: center;
-  font-family: 'Rock Salt', cursive;
-  font-size: 45px;
-  padding-top: 25px;
-  color: #f6f578;
-  margin: 0;
-}
-.group{
-  display: flex;
-  flex-direction: row;
-
-}
-/* added psuedoclass */
-a:link{
-  color: #00adb5;
-}
-a:visited{
-  color: #32e0c4;
-}
-
-a:hover{
-    color: #79d70f;
-}
-
-a:active{
-  color: #17706e;
+  padding: 10px 0 0 0;
 }
 
 header nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 header nav ul {
   display: flex;
   flex-direction: row;
-  padding-left: 0;
-  list-style: none;
-  align-content: space-between;
-  align-items: flex-end;
+}
+
+header nav ul li {
+  list-style-type: none;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  padding: 10px 20px 0 0;
+  color: #f6f577;
+  padding: 10px;
+  font-family: 'Playfair Display SC', serif;
 }
 
-header nav ul li a:link {
-  color: #f6f578;
+header nav ul li a:hover {
+  color: #79d70f;
 }
 
-header nav ul li a:visited{
-  color: #32e0c4;
-}
-
-header nav ul li a:hover{
-    color: #79d70f;
-}
-
-header nav ul li a:active{
-  color: #17706e;
-}
-
-
-img {
-  height: 200px;
-  width: 200px;
-}
-
-h2{
-  vertical-align: bottom;
-}
-
-a {
-  margin-right: 45px;
-}
-
-
-ul {
-  list-style-type: circle;
-  margin: 10px;
-}
-
- .group{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.item {
-  width: 50%;
-
-}
-.projpic{
-  padding: 25px;
-  height: 250px;
-  width: 250px;
-}
-
-@media all and (min-width: 600px) {
-
+@media all and (min-width: 700px){
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
   }
 
   .logo {
-    font-size: 42px;
-    margin: 14px 0;
-    padding-top: 6px;
+    font-size: 48px;
   }
+}
 
-  header nav {
-    margin-top: 14px;
-  }
+/* added psuedoclass */
+main a:link{color: #00adb5;}
+main a:visited{color: #32e0c4;}
+main a:hover{color: #79d70f;}
+main a:active{color: #17706e;}
 
-@media (max-width: 800px){
-  .group{
-  flex-direction: column;
+
+form {
+  padding-right: 10px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+main img{
+  width: 50%
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  flex: 1;
+}
+
+.item-double {
+  flex: 2;
+}
+
+@media all and (max-width: 800px) {
+  section {
+    padding: 0 10%;
   }
+  .group {
+    flex-direction: column;
 }
