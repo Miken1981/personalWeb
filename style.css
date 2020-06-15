@@ -98,4 +98,8 @@ main img{
   }
   .group {
     flex-direction: column;
+  }
+  .logo {
+    font-size: 32px;
+  }
 }
