@@ -39,7 +39,7 @@ header nav ul li a:hover {
   color: #79d70f;
 }
 
-@media all and (min-width: 700px){
+@media (min-width: 700px){
   header {
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,7 @@ main img{
   flex: 2;
 }
 
-@media all and (max-width: 700px) {
+@media (max-width: 700px) {
   section {
     padding: 0 10%;
   }
